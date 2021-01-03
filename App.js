@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import { Button, FlatList, StyleSheet, View } from 'react-native';
 import GoalInput from './components/GoalInput';
 import GoalItem from './components/GoalItem';
-{
-	/* <script src="http://localhost:19002" />; */
-}
 
 export default function App() {
 	const [ courseGoals, setCourseGoals ] = useState([]);

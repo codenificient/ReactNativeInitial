@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { Button, FlatList, StyleSheet, View } from 'react-native';
 import GoalInput from './components/GoalInput';
 import GoalItem from './components/GoalItem';
-<script src="http://localhost:8097" />;
+{
+	/* <script src="http://localhost:19002" />; */
+}
 
 export default function App() {
 	const [ courseGoals, setCourseGoals ] = useState([]);
@@ -14,12 +16,12 @@ export default function App() {
 	};
 
 	const removeGoalHandler = (goalId) => {
-		console.log('TO BE DELETED - ' + goalId);
-		console.log(courseGoals);
+		// console.log('TO BE DELETED - ' + goalId);
+		// console.log(courseGoals);
 		setCourseGoals((currentGoals) => {
 			return currentGoals.filter((goal) => goal.id !== goalId);
 		});
-		console.log(courseGoals);
+		// console.log(courseGoals);
 	};
 
 	const cancelAddGoal = () => {
